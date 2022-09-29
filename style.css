@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+:root {
+    --font-style: 'Nunito Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-style);
+    background-color: #181818;
+    
+}
+
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.active {
+    color: white;
+}
+
+.fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+nav a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin-right: 6px;
+  }
+
+
+nav ul {
+   margin: 0;
+   width: 400px;
+   display: flex;
+   flex-direction: row;
+   list-style: none;
+   padding: 25px 0;
+   border-radius: 25px;
+   border: 0.1px solid #AF0171;
+   background-color: #181818;
+   box-shadow: 0 4px 8px #E80F88, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+li {
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    background-color: inherit;
+}
+ 
+li  {
+    color: #ffffff; 
+ }
+
+li:after {
+    display: block;
+    content: '';
+    border-bottom: solid 1px #E80F88;
+    padding-bottom: 1%;
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
+}
+
+li:hover::after {
+    transform: scaleX(1);
+    filter: brightness(1.2);
+}
+
+footer {
+    width: 100%;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    top: 100%;
+  }
+  footer img {
+    width: 30px;
+    filter: invert(0.4);
+  }
+  footer img:hover {
+    filter: invert(1);
+  }
+  footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+    width: max-content;
+    padding: 0;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .column img {
+    width: 100%;
+  }
+  
